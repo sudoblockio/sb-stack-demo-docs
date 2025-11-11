@@ -40,7 +40,11 @@ sb-stack is a composable rust framework for building protocol specific clients w
 
 **Rust**
 ```rust
-use sb_stack_transport_http::{HttpTransport, Http1TransportConfig, HttpTransportRequestPacket};
+use sb_stack_transport_http::{
+  HttpTransport, 
+  Http1TransportConfig, 
+  HttpTransportRequestPacket
+};
 
 async fn example() -> Result<(), Box<dyn std::error::Error>> {
     let base_url = "https://httpbin.org".parse()?;
