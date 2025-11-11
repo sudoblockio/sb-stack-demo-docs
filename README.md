@@ -1,9 +1,3 @@
----
-title: "sb-stack-demo-docs"
-description: "Quick reference guide with code examples for sb-stack services and clients"
-nav_order: 0
----
-
 # sb-stack-demo-docs
 
 sb-stack is a composable rust framework for building protocol specific clients with bindings into multiple languages like typescript and python. Built on top of [hyperium](https://github.com/hyperium) and composed with [tower](https://github.com/tower-rs), sb-stack binds rust's performance and memory safety to higher level languages benchmarking as the fastest typescript client (5x faster than axios & fetch) and on par with python's aiohttp.
