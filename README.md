@@ -44,7 +44,9 @@ use sb_stack_transport_http::{HttpTransport, Http1TransportConfig, HttpTransport
 
 async fn example() -> Result<(), Box<dyn std::error::Error>> {
     let base_url = "https://httpbin.org".parse()?;
-    let mut transport = HttpTransport::new(base_url.clone(), Http1TransportConfig::default(), None);
+    let mut transport = HttpTransport::new(
+      base_url.clone(), Http1TransportConfig::default(), None
+      );
     transport.connect().await?;
     let mut request = HttpTransportRequestPacket::new(http::Method::GET);
     request.set_url(Some(base_url.join("/get")?));
