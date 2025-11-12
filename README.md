@@ -1,6 +1,6 @@
-# sb-client-demo
+# sb-stack-demo
 
-Modern applications support SDKs in a number of different languages utilizing a variety of different protocols which must reimplement the same underlying logic and types. `sb-stack` unifies these efforts into a single composable rust core with bindings into higher level languages like python and typescript for building protocol specific clients. While the real benefits are in maintaining one package vs 1 per language (and per chain), `sb-stack` also ships with a universal middleware ecosystem (retries, telemetry, signing) and a core itself is [5 times faster](1.1-http-transport.md#performance-benchmarks) than native language implementations like axios and fetch.
+Modern applications support SDKs in a number of different languages utilizing a variety of different protocols which must reimplement the same underlying logic and types in each one. `sb-stack` unifies these efforts into a single composable rust core with bindings into higher level languages like python and typescript to build protocol specific clients. While the real benefits are in maintaining one package vs 1 per language (and per chain), `sb-stack` also ships with a universal middleware ecosystem (retries, telemetry, load balancing) with a core that is [5 times faster](1.1-http-transport.md#performance-benchmarks) than native language implementations like axios and fetch.
 
 ## Documentation Index
 
